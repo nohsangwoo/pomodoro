@@ -1,0 +1,13 @@
+# *
+User-agent: *
+Allow: /
+
+# *
+User-agent: *
+Disallow: /private/
+
+# Host
+Host: https://pomodoro.ludgi.ai
+
+# Sitemaps
+Sitemap: https://pomodoro.ludgi.ai/sitemap.xml

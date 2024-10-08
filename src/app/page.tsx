@@ -6,13 +6,13 @@ import { FaPlay, FaPause, FaRedo } from 'react-icons/fa';
 import ParticlesBackground from './components/ParticlesBackground';
 
 export default function Home() {
-  const [time, setTime] = useState(1 * 10); // 25분으로 변경
+  const [time, setTime] = useState(25 * 60); // 25분으로 변경
   const [isActive, setIsActive] = useState(false);
   const [isCompleted, setIsCompleted] = useState(false);
 
   const playAlarm = useCallback(() => {
     const audioContext = new (window.AudioContext || (window as any).webkitAudioContext)();
-    const duration = 10; // 알람 지속 시간 (초)
+    const duration = 5; // 알람 지속 시간 (초)
     const interval = 0.5; // 비프음 간격 (초)
 
     for (let i = 0; i < duration; i += interval) {
