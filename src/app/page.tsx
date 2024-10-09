@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback } from 'react';
 import { motion } from 'framer-motion';
 import { FaPlay, FaPause, FaRedo } from 'react-icons/fa';
 import ParticlesBackground from './components/ParticlesBackground';
+import DisplayLudgi from './components/DisplayLudgi';
 
 export default function Home() {
   const [time, setTime] = useState(25 * 60); // 25분으로 변경
@@ -93,6 +94,7 @@ export default function Home() {
       >
         {isCompleted ? <FaRedo size={24} /> : isActive ? <FaPause size={24} /> : <FaPlay size={24} />}
       </motion.button>
+      <DisplayLudgi />
     </div>
   );
 }
